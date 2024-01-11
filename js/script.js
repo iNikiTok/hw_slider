@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   let currentSlide = 1;
-  const totalSlides = 2;
+  let totalSlides = 2;
 
-  const prevButton = document.getElementById("prevButton");
-  const nextButton = document.getElementById("nextButton");
+  let prevButton = document.getElementById("prevButton");
+  let nextButton = document.getElementById("nextButton");
 
   prevButton.addEventListener("click", () => {
     currentSlide = currentSlide - 1 <= 0 ? totalSlides : currentSlide - 1;
@@ -22,4 +22,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   showSlide(currentSlide);
-});
+}); // фух, ели успел(тут могла быть ваша утка)
